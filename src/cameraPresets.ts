@@ -12,7 +12,6 @@ import {
 // It should be attached to a single, persistent object in the world.
 export class CameraPresets extends Component<typeof CameraPresets> {
 
-  // We expose properties so a creator can set a target for the CCTV camera.
   static propsDefinition = {
     // The entity (e.g., a CCTV camera model) the player's camera will be fixed on.
     cctvTarget: {
@@ -20,14 +19,14 @@ export class CameraPresets extends Component<typeof CameraPresets> {
     },
   };
 
-  private world!: World;
+  // 'world' is a protected member of the Component class, so we don't need to declare it.
 
-  // preStart() is called once when the script is instantiated.
-  preStart() {
-    this.world = this.entity.world;
-  }
+  // The 'start' method is required by the Component base class.
+  // We don't need to do anything here, but it must be present.
+  start() {}
 
   // Applies a fixed, CCTV-style camera to the local player.
+  // Make sure this script's execution mode is set to 'Local'.
   applyCCTV(player: Player) {
     // Get the CCTV target entity from the public properties.
     const cctvTarget = this.props.cctvTarget;
