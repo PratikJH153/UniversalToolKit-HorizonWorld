@@ -1,0 +1,24 @@
+{
+  "name": "universaltoolkitmeta",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/PratikJH153/UniversalToolKit-HorizonWorld#readme",
+  "bugs": {
+    "url": "https://github.com/PratikJH153/UniversalToolKit-HorizonWorld/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PratikJH153/UniversalToolKit-HorizonWorld.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@horizonjs/core": "^1.2.6",
+    "horizon-core": "^0.1.6"
+  }
+}
