@@ -545,11 +545,6 @@ export class UniversalDoor extends hz.Component<typeof UniversalDoor> {
     }
 }
 
-// ========================================
-// REGISTRATION (Required for Horizon Worlds)
-// ========================================
-
-// Register this component so Horizon Worlds can use it
 hz.Component.register(UniversalDoor);
 
 /*
