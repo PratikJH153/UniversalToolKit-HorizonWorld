@@ -38,7 +38,6 @@ debugMode: ✅ true (recommended for setup)
 enableDeviceOverride: ❌ false (unless testing)
 fallbackToDesktop: ✅ true (recommended)
 
-text
 
 #### 4. Verify Installation
 1. **Build your world** (Ctrl+B)
@@ -46,7 +45,6 @@ text
 3. **Check console** - you should see:
 ✅ Universal InputMapper ready - supports VR, Mobile, and Desktop interactions
 
-text
 
 ## 🎯 **Basic Usage**
 
@@ -67,7 +65,6 @@ MyButton (3D Object - Cube or custom model)
 ├── ButtonTrigger (Trigger Zone)
 └── ButtonScript (Empty Object with your script)
 
-text
 
 #### 2. Write the Button Script
 import * as hz from 'horizon/core';
@@ -79,7 +76,6 @@ inputMapper: { type: hz.PropTypes.Entity, description: "Drag InputMapper_System 
 triggerZone: { type: hz.PropTypes.Entity, description: "Drag ButtonTrigger here" }
 };
 
-text
 private inputMapperComponent: InputMapper | null = null;
 
 preStart() {
@@ -143,7 +139,6 @@ private pressButton() {
 
 hz.Component.register(UniversalButton);
 
-text
 
 #### 3. Configure the Button
 1. **Attach script** to MyButton object
@@ -169,16 +164,12 @@ if (this.inputMapperComponent) {
 this.inputMapperComponent.setDeviceOverride(somePlayer, 'mobile');
 }
 
-text
-
 ### Player Statistics
 
 Get real-time data about what devices your players are using:
 
 const stats = this.inputMapperComponent.getPlayerStats();
 console.log(Players: ${stats.total}, VR: ${stats.vr}, Mobile: ${stats.mobile}, Desktop: ${stats.desktop});
-
-text
 
 ### Dynamic Action Registration
 
@@ -198,8 +189,6 @@ mobile: (ctx) => this.placeWithTouch(ctx),
 desktop: (ctx) => this.placeWithClick(ctx)
 });
 }
-
-text
 
 ## 📦 **Example Prefabs**
 
@@ -236,7 +225,6 @@ private registerYourAction() {
 📝 Registered action 'door_interact' for: vr, mobile, desktop
 ✅ Executed 'door_interact' for vr user: JohnVR
 
-text
 
 ### Performance Monitoring
 
@@ -245,7 +233,6 @@ Check system performance:
 const stats = this.inputMapperComponent.getPlayerStats();
 console.log(Managing ${stats.total} players across ${this.inputMapperComponent.getRegisteredActions().length} actions);
 
-text
 
 ## 📚 **API Reference**
 
@@ -314,8 +301,6 @@ mobile?: ActionHandler; // Handler for mobile users
 desktop?: ActionHandler; // Handler for desktop users
 };
 
-text
-
 ## 🎯 **Next Steps**
 
 1. **Start Simple**: Begin with the basic button example
@@ -329,10 +314,7 @@ text
 - **Questions?** Join our Discord community
 - **Found a bug?** Report it on GitHub Issues
 - **Want to contribute?** Check out our Contributing Guide
-- **Need custom development?** Contact our professional services team
 
 ---
 
 **Happy Creating!** 🎉
-
-*Remember: Great cross-platform experiences start with understanding that VR, Mobile, and Desktop users each have unique needs and capabilities. Universal InputMapper helps you honor those differences while maintaining consistent functionality.*
