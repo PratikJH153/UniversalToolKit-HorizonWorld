@@ -115,14 +115,6 @@ inputMapper.registerAction('door_interact', {
 });
 ```
 
-## 📊 **Real Creator Feedback**
-
-> *"Cut my development time in half. Now I focus on creating great content instead of worrying about platform compatibility."* - VR Creator
-
-> *"Finally, my mobile players get the same quality experience as VR users. Game changer!"* - Game Developer
-
-> *"The documentation is incredible. Had it working in 5 minutes."* - New Creator
-
 ## 🛠️ **Technical Requirements**
 
 - **Meta Horizon Worlds** Desktop Editor
@@ -144,22 +136,17 @@ We welcome contributions from the community! Whether it's:
 - 📝 **Documentation** - Improve our guides and examples
 - 🎯 **Example Prefabs** - Share your universal interaction patterns
 
-## 📄 **License**
-
-This project is licensed under the MIT License - feel free to use it in your commercial and personal projects.
-
 ## 🌟 **Star This Project**
 
 If Universal InputMapper helped you create better cross-platform experiences, please give it a star! It helps other creators discover this tool.
 
 ## 📞 **Support**
 
-- 📧 **Email**: [your-email@example.com]
-- 💬 **Discord**: [Your Discord Server]
-- 🐦 **Twitter**: [@YourHandle]
+- 📧 **Email**: pratik.jh2017@gmail.com
 
 ---
 
 **Made with ❤️ for the Meta Horizon Worlds creator community**
 
 *Universal InputMapper - Because every player deserves a great experience, regardless of their device.*
+
