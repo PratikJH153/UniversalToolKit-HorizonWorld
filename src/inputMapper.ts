@@ -418,11 +418,4 @@ export class InputMapper extends hz.Component<typeof InputMapper> {
     }
 }
 
-// ========================================
-// REGISTRATION (Required for Horizon Worlds)
-// ========================================
-
-// Register this component so Horizon Worlds can use it
 hz.Component.register(InputMapper);
-
-// ========================================
